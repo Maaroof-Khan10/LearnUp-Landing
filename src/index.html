@@ -1,17 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LearnUp - Online Courses for Your Future</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin: 0;
+            color: #333;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 10%;
+        }
+        .course {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .course:hover {
+            transform: translateY(-10px);
+        }
+        .course h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .course p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+            color: #5c6bc0;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5c6bc0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #3f4a89;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #5c6bc0;
+        }
+    </style>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
 
+    <header>
+        <h1>LearnUp</h1>
+        <p>Unlock Your Potential with Quality Online Courses</p>
+    </header>
+
+    <section class="hero">
+        <h2>Elevate Your Skills with Our Expert Courses</h2>
+        <p>At LearnUp, we offer a variety of courses designed to help you reach your goals. From technology to business, we’ve got something for everyone!</p>
+        <a href="#courses" class="cta-btn">Explore Our Courses</a>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="course">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript, and more to build modern websites and applications.</p>
+            <div class="price">$99</div>
+            <a href="#" class="cta-btn">Enroll Now</a>
+        </div>
+
+        <div class="course">
+            <h3>Data Science</h3>
+            <p>Become a data scientist by mastering Python, SQL, and machine learning algorithms.</p>
+            <div class="price">$129</div>
+            <a href="#" class="cta-btn">Enroll Now</a>
+        </div>
+
+        <div class="course">
+            <h3>Digital Marketing</h3>
+            <p>Learn the essentials of SEO, social media, content marketing, and more to grow your business.</p>
+            <div class="price">$89</div>
+            <a href="#" class="cta-btn">Enroll Now</a>
+        </div>
+
+        <div class="course">
+            <h3>Graphic Design</h3>
+            <p>Master design tools like Photoshop and Illustrator to create stunning visuals and branding.</p>
+            <div class="price">$79</div>
+            <a href="#" class="cta-btn">Enroll Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LearnUp. All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="LinkedIn">🔗</a>
+        </div>
+    </footer>
+
+</body>
 </html>
